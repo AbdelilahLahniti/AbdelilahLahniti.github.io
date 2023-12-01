@@ -648,14 +648,16 @@ transition: 1s
     background-color: rgba(255, 255, 255, 0.087);
     max-width: 300px;
     min-width: 300px;
-    height: 60vh;
+    height: 55vh;
+    padding-top:10px ;
     border-radius: 10px;
+    
   }
   .service .icon{
     color: var(--aqua);
   }
   .service p{
-    max-width: 80%;
+    max-width: 85%;
     height: 200px;
     overflow: scroll;
   }
