@@ -53,6 +53,46 @@ body{
     font-family: 'Rubik', sans-serif;
 }
 
+ 
+.cursor{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #c6c6c67a;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: .2s;
+  z-index: 99999999999;
+}
+
+.cursor2{
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background-color: #c6c6c6;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: .1s;
+  z-index: 99999999999;
+
+}
+
+.content:hover ~ .cursor{
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: #c6c6c6;
+  opacity: .5;
+}
+
+.content:hover ~ .cursor2{
+  opacity: 0;
+}
+
 /* ----------------loading page  --------------*/
 #loader {
   position: fixed;
@@ -401,10 +441,10 @@ transition: 1s
     height: 100vh;
 }
 .description{
-  max-width: 400px;
+  max-width: 500px;
     line-height: 20px;
     letter-spacing: 1.5px;
-    word-spacing: 4px;
+    word-spacing: 2px;
 }
 .media{
     display: block;
@@ -745,10 +785,7 @@ transition: 1s
     min-height:60px ;
     background-color: #1d2832;
   }
-  footer h6{
-    border-left: 2px solid white;
-    padding:0px 15px ;
-  }
+  
 
 
 
@@ -836,14 +873,35 @@ transition: 1s
     height: fit-content !important;
   }
 }
+@media only screen and (max-width: 770px){
+  .aboutImageBlock{
+    width:300px !important;
+    height: 300px !important;
+    background-image: url(../images/aboutImageBack.jpg);
+    background-size: 100% 90%;
+    margin-bottom: -50px !important;
+    border-radius: 50%;
+    margin: 0px auto;
+  }
+ 
+  
+
+}
 
 @media only screen and (max-width: 500px){
   form input, textarea{
     width:250px !important;
     
   }
- 
-  
+  .contactInfo i {
+    font-size: 30px !important;
+  }
+  .contactInfo h5{
+    font-size: 20px;
+  }
+  footer h6{
+    font-size: 10px;
+  }
 
 }
 
@@ -885,6 +943,25 @@ transition: 1s
 
 
   /* --------------about page-------------  */
+  .aboutPage{
+    box-shadow: #ffffff2f 1px 1px 5px ;
+    padding-bottom: 30px !important;
+    margin: 20px;
+    display: none;
+    position: absolute;
+  }
+  .aboutPage p{
+    max-width:98%;
+  }
+  .black{
+    width: 100%;
+    height: 100%;
+    background-color: #1d2832;
+    display: none;
+    position: absolute;
+    z-index: 9999;
+  }
+  
   .myInfo{
     border-top:2px solid rgba(255, 255, 255, 0.306) ;
     padding-top: 20px;
@@ -893,10 +970,118 @@ transition: 1s
     width:300px;
     height: 410px;
     background-image: url(../images/aboutImageBack.jpg);
-    background-size: 100% 100% !important;
-    background-attachment: fixed;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
+    background-size: 100% 100%;
+    margin-bottom: 50px
   }
+  .slider{
+    margin: 0px auto;
+    width: 100%;
+    height: 300px;
+  }
+  .slide{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .slide .slideItem{
+    width: 100%;
+    height: 100%; 
+    display: none;
+  }
+  .comment{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.304);
+    margin: auto;
+    height: 90%;
+    width: 45%;
+  }
+  .comment i{
+    color: var(--aqua);
+    font-size: 40px;
+  }
+  .slide .slideItem p{
+    width: 90%;
+    height: 60%;
+    margin: 20px auto;
+    overflow: scroll;
+  }
+  .sliderBtn{
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+    
+  }
+  .showSlide{
+    display:flex  !important;
+    gap:15px;
+  }
+  .show{
+    display: block !important;
+  }
+
   
+  .x , .x2{
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+    float:right;
+    position: relative;
+    cursor: pointer;
+  }
+  .bar1, .bar4{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    position: absolute;
+  }
+  .bar2 , .bar3{
+    width: 100%;
+    height: 2px;
+    background-color: var(--aqua);
+    transform: rotate(-45deg);
+    position: absolute;
+  }
+
+
+  .cvsBlock{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 200px;
+    background-color: var(--principalColor);
+    margin-top:-100px;
+    margin-left: -200px;
+    z-index: 999999999;
+    display: none;
+    border-radius: 5px;
+
+  }
+  .cvsBlockBackGround{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0.5;
+    z-index: 99999999;
+    display: none;
+
+  }
+
+  @media only screen and (max-width:600px){
+    .cvsBlock{
+     
+      width: 200px;
+      height: 100px;
+      margin-top:-50px;
+      margin-left:-100px;
+    }
+  }
+  .cvs{
+    width: 100%;
+    height: 80%;
+  }
  

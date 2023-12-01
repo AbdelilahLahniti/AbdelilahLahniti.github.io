@@ -15,7 +15,9 @@
 </head>
 
 <body>
-<!---------------- loading page---------------->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <!---------------- loading page---------------->
     <div id="loader">
         <div class="pl">
             <div class="pl__dot"></div>
@@ -32,229 +34,383 @@
             <div class="pl__dot"></div>
             <div class="pl__text">Loading…</div>
         </div>
-     </div>
-    <!--------------- header------- -->
-    <header class="sticky-top">
-        <nav class="d-flex justify-content-between ps-5">
-            <div class="logo">
-                <img src="" alt="Abdelilah LAHNITI">
-            </div>
-            <div class="menu">
-                <div class="menu1"></div>
-                <div class="menu2"></div>
-                <div class="menu3"></div>
-            </div>
-            
-            <ul class="navlist d-flex gap-5">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">portfolio</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
+    </div>
 
-        </nav>
+    <div class="p-absolute allContent">
+        <!--------------- header------- -->
+        <header class="sticky-top">
+            <nav class="d-flex justify-content-between ps-5">
+                <div class="logo">
+                    <img src="" alt="Abdelilah LAHNITI">
+                </div>
+                <div class="menu">
+                    <div class="menu1"></div>
+                    <div class="menu2"></div>
+                    <div class="menu3"></div>
+                </div>
 
-    </header>
-    <!-- -----------HOME slid--------- -->
-    <section class="home container-lg " id="home">
-        <div class="row h-100 p-5">
-            <div class="col-md-6 col-12 d-flex flex-column justify-content-center gap-2 contentHome">
-                <h3 class="f3">Hello, it'is me </h3>
-                <h1 class="f2">LAHNITI Abdelilah</h1>
-                <h3 class="f3">And i'm a <span class="specialty"></span></h3>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, velit </p>
+                <ul class="navlist d-flex gap-5">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+
+            </nav>
+
+        </header>
+        <!-- -----------HOME slid--------- -->
+        <section class="home container-lg " id="home">
+            <div class="row h-100 p-5">
+                <div class="col-md-6 col-12 d-flex flex-column justify-content-center gap-2 contentHome">
+                    <h3 class="f3">Hello, it'is me </h3>
+                    <h1 class="f2">LAHNITI Abdelilah</h1>
+                    <h3 class="f3">And i'm a <span class="specialty"></span></h3>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, velit </p>
+                    <div class="d-flex m-3 gap-3 w-75 justify-content-center">
+                        <span class="media"><i class="fa-brands fa-facebook-f"></i></span>
+                        <span class="media"><i class="fa-brands fa-instagram"></i></span>
+                        <span class="media"><i class="fa-brands fa-linkedin-in"></i></span>
+                        <span class="media"><i class="fa-brands fa-twitter"></i></span>
+                    </div>
+                    <a class="cv" id="cv" href="#" style="margin:20px 23% ;">Download CV</a>
+                </div>
+                <div class="col-md-6 homeImage d-flex align-items-center justify-content-center">
+                    <div class="card">
+                        <div class="bg"></div>
+                        <div class="blob"></div>
+                        <img src="./images/Untitled-1.png" alt="Abdelilah lahniti">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --------------------About slide -------------->
+        <section id="about">
+            <div class="row h-100 container-fluid">
+                <div class="col-md-6 d-md-flex align-items-center justify-content-center aboutImg  d-none">
+                    <div class="aboutCard">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="card-inner"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 d-flex flex-column justify-content-center aboutContent">
+                    <h1 class="heading f1">About <span class="spanColored">Me</span></h1>
+                    <h3 class="f3"><span class="specialtis specialty"></span></h3>
+                    <p class="description mt-4">I am a freelancer based in Morocco and i have been building noteworthy UX/UI
+                        designs and websites for years, which comply with the latest design trends. I help convert a vision
+                        and an idea into meaningful and useful products. Having a sharp eye for product evolution helps me
+                        prioritize tasks, iterate fast and deliver faster..</p>
+                    <a class="cv aboutBtn" href="#">Read More</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!---------------- services section -------------->
+        <section class="services container d-flex flex-column justify-content-center align-items-center" id="services">
+            <h1 class="heading f1"><span class="spanColored">Our </span>services </h1>
+            <div class="row gap-3 justify-content-center">
+
+                <div class="col-md-4 d-flex flex-column justify-content-center align-items-center gap-1 service">
+                    <div><i class="fa-solid fa-code icon fa-3x"></i></div>
+                    <h3 class="">Web development</h3>
+                    <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore aliquid
+                        dolorum
+                        recusandae ab eos distinctio, saepe labore, alias voluptatem, itaque debitis explicabo non
+                        exercitationem corrupti.</p>
+                </div>
+                <div class="col-md-4 d-flex flex-column justify-content-center align-items-center gap-1 service">
+                    <div><i class="fa-solid fa-paintbrush icon fa-3x"></i></div>
+                    <h3 class="">Graphic Design</h3>
+                    <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore aliquid
+                        dolorum
+                        recusandae ab eos distinctio, saepe labore, alias voluptatem, itaque debitis explicabo non
+                        exercitationem corrupti.</p>
+                </div>
+                <div class="col-md-4 d-flex flex-column justify-content-center align-items-center gap-1 service">
+                    <div><i class="fa-solid fa-chart-simple icon fa-3x"></i></div>
+                    <h3 class="">Digital Marketing</h3>
+                    <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore aliquid
+                        dolorum
+                        recusandae ab eos distinctio, saepe labore, alias voluptatem, itaque debitis explicabo non
+                        exercitationem corrupti.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!--------------------- portfolio section ---------------->
+
+        <section class="portfolio" id="portfolio">
+            <div class="container-md">
+                <h1 class="f2  heading">Latest <span class="spanColored">Projects</span></h1>
+                <div class="row m-auto">
+
+                    <div class="col-lg-4 col-6 project1">
+                        <div class="project">
+                            <img src="./images/portfolio1.jpg" alt="project1" class="d-block">
+                            <div class="projectContent">
+                                <h3 class="f3">Web Template</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, atque Lorem ipsum
+                                </p>
+                                <a href="#" class="link"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-6 project1">
+                        <div class="project">
+                            <img src="./images/portfolio2.jpg" alt="project1" class="d-block">
+                            <div class="projectContent">
+                                <h3 class="f3">Web Template</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, atque Lorem ipsum
+                                </p>
+                                <a href="#" class="link"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-6 project1">
+                        <div class="project">
+                            <img src="./images/portfolio3.jpg" alt="project1" class="d-block">
+                            <div class="projectContent">
+                                <h3 class="f3">Web Template</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, atque Lorem ipsum
+                                </p>
+                                <a href="#" class="link"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-6 project2">
+                        <div class="project">
+                            <img src="./images/portfolio4.jpg" alt="project1" class="d-block">
+                            <div class="projectContent">
+                                <h3 class="f3">Web Template</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, atque Lorem ipsum
+                                </p>
+                                <a href="#" class="link"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-6 project2">
+                        <div class="project">
+                            <img src="./images/portfolio5.jpg" alt="project1" class="d-block">
+                            <div class="projectContent">
+                                <h3 class="f3">Web Template</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, atque Lorem ipsum
+                                </p>
+                                <a href="#" class="link"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-6 project2">
+                        <div class="project">
+                            <img src="./images/portfolio6.jpg" alt="project1" class="d-block">
+                            <div class="projectContent">
+                                <h3 class="f3">Web Template</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, atque Lorem ipsum
+                                </p>
+                                <a href="#" class="link"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--------------------- contact section ---------------->
+
+        <section class="contact mt-5" id="contact">
+            <h1 class="heading f1"><span class="spanColored">Contact </span>Me </h1>
+            <div class="row">
+                <div class="col-md-6 pt-3 formPart">
+                    <h3 class="f3 mb-3 ">Get in touch</h3>
+                    <form action="" class="text-center">
+                        <div class="d-sm-flex d-block  gap-3 m-auto justify-content-center">
+                            <input type="text" name="name" placeholder="Name" id="name" class="mb-4 mb-sm-0">
+                            <input type="email" name="email" placeholder="email" id="email">
+                        </div>
+                        <input type="subject" name="subject" placeholder="subject" class="d-block m-auto mt-4 mb-4">
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="message"
+                            class=" mt-4 d-block mb-4 m-auto"></textarea>
+                        <input type="submit" class="btn" value="Send Message">
+                    </form>
+                </div>
+                <div class="col-md-6 col-12 pt-3 ">
+                    <div class=" d-flex flex-column align-items-center descriptionContact">
+                        <h3 class="f3 ">Contact Info</h3>
+                        <p class="w-75 text-start ">We are always available if the right project comes along, Feel free
+                            to
+                            contact us!</p>
+                    </div>
+                    <div class="contactInfo ms-5">
+                        <div class="d-flex gap-3 mt-2">
+                            <div class="col-2 d-flex flex-column justify-content-center align-items-center gap-5">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <i class="fa-solid fa-at"></i>
+                            </div>
+                            <div class="col-10 ps-3  d-flex flex-column text-start gap-5">
+                                <h5>Call Me<br> <em class="f4 ms-3">+212 611-411-620</em> </h5>
+                                <h5>Contact Me In Whatsapp<br> <em class="f4 ms-3">+212 606-507-408</em> </h5>
+                                <h5>Email Me<br> <em class="f4 ms-3">alahniti20@gmail.com</em></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------------------- footer ---------------->
+
+        <footer class="d-flex justify-content-center align-items-center ">
+            <h6>&#169 Copyright 2023 | Developed by Abdelilah LAHNITI | All rights reserved</h6>
+        </footer>
+    </div>
+    <div class="black"></div>
+    <div class="aboutPage">
+        <div class="x">
+            <a href="#about">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+            </a>
+        </div>
+        <h1 class="text-center my-5 f1">About <span class="spanColored">Me</span></h1>
+        <div class="row my-5 ">
+            <div class="col-md-4 col-12 d-md-flex align-items-center justify-content-center aboutImg">
+                <div class="aboutImageBlock"></div>
+            </div>
+            <div class="col-md-8 p-5 p-lg-0 col-12 d-flex flex-column justify-content-center aboutPageContent">
+                <h4 class="">who <span class="spanColored">am i</span>?</h4>
+                <h3 class="f3 my-2">I'm LAHNITI Abdelilah, a visual UX/UI Designer and Web Developer</h3>
+                <p class="mt-3">With a diverse skill set spanning programming, web development, and graphic design, I specialize in creating dynamic digital experiences. Proficient in multiple programming languages and well-versed in tools such as Photoshop and Illustrator, I seamlessly blend technical expertise with creative flair. My approach involves not just crafting visually appealing designs but ensuring they are backed by robust coding for optimal functionality and user engagement. I am dedicated to staying at the forefront of technology trends, allowing me to deliver innovative and impactful solutions in the ever-evolving digital landscape </p>
+                <div class="myInfo d-lg-flex gap-lg-5 gap-2 mt-3">
+                    <div class="NameAge">
+                        <h6>Name:&nbsp<em class="f4"> LAHNITI Abdelilah</em></h6>
+                        <h6>age:&nbsp <em class="f4"> 21</em></h6>
+                    </div>
+                    <div class="NameAge">
+                        <h6>Email:&nbsp<em class="f4 text-success"> alahniti20@gmail.com</em></h6>
+                        <h6>From:&nbsp <em class="f4"> Zagora Morocco</em></h6>
+                    </div>
+                </div>
                 <div class="d-flex m-3 gap-3 w-75 justify-content-center">
                     <span class="media"><i class="fa-brands fa-facebook-f"></i></span>
                     <span class="media"><i class="fa-brands fa-instagram"></i></span>
                     <span class="media"><i class="fa-brands fa-linkedin-in"></i></span>
                     <span class="media"><i class="fa-brands fa-twitter"></i></span>
                 </div>
-                <a class="cv" id="cv" href="#" style="margin:20px 23% ;" download="cv.pdf">Download CV</a>
-            </div>
-            <div class="col-md-6 homeImage d-flex align-items-center justify-content-center">
-                <div class="card">
-                    <div class="bg"></div>
-                    <div class="blob"></div>
-                    <img src="./images/Untitled-1.png" alt="Abdelilah lahniti">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- --------------------About slide -------------->
-    <section  id="about">
-        <div class="row h-100 container-fluid">
-            <div class="col-md-6 d-md-flex align-items-center justify-content-center aboutImg d-none">
-                <div class="aboutCard">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="card-inner"></div>
-                </div>
-            </div>
-            <div class="col-md-6 col-12 d-flex flex-column justify-content-center aboutContent">
-                <h1 class="heading f1">About <span class="spanColored">Me</span></h1>
-                <h3 class="f3"><span class="specialtis specialty"></span></h3>
-                <p class="description mt-4">Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
-                    voluptas? ipsum dolor sit amet consectetur adipisicing elit. Incidunt, velit </p>
-                <a class="cv" href="#">Read More</a>
             </div>
         </div>
 
-    </section>
 
-    <!---------------- services section -------------->
-    <section class="services container d-flex flex-column justify-content-center align-items-center" id="services">
-        <h1 class="heading f1"><span class="spanColored">Our </span>services </h1>
-        <div class="row gap-3 justify-content-center">
+        <h5 class="f4 ms-5">What my clients think about me</h5>
+        <h3 class="f3 ms-5">Testimonials</h3>
+        <div class="slider">
+            <div class="slide">
+                <div class=" slideItem showSlide">
+                    <div class="comment">
+                        <div class="m-4 d-flex justify-content-between">
+                            <div>
+                                <h5>José Luis</h5>
+                                <label>writer</label>
+                            </div>
+                            <div><i class="fa-solid fa-quote-right"></i></div>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, beatae. Lorem ipsum dolor
+                            sit amet consectetur, adipisicing elit. Iure, dolores!
+                        </p>
+                    </div>
+                    <div class="comment">
+                        <div class="m-4 d-flex justify-content-between">
+                            <div>
+                                <h5>José Luis</h5>
+                                <label>writer</label>
+                            </div>
+                            <div><i class="fa-solid fa-quote-right"></i></div>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, beatae. Lorem ipsum dolor
+                            sit amet consectetur, adipisicing elit. Iure, dolores!
+                        </p>
+                    </div>
 
-            <div class="col-md-4 d-flex flex-column justify-content-center align-items-center gap-1 service">
-                <div><i class="fa-solid fa-code icon fa-3x"></i></div>
-                <h3 class="">Web development</h3>
-                <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore aliquid dolorum
-                    recusandae ab eos distinctio, saepe labore, alias voluptatem, itaque debitis explicabo non
-                    exercitationem corrupti.</p>
-                <a class="cv" href="#">Read More</a>
+                </div>
+                <div class="slideItem">
+                    <div class="comment">
+                        <div class="m-4 d-flex justify-content-between">
+                            <div>
+                                <h5>José Luis</h5>
+                                <label>writer</label>
+                            </div>
+                            <div><i class="fa-solid fa-quote-right"></i></div>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, beatae. Lorem ipsum dolor
+                            sit amet consectetur, adipisicing elit. Iure, dolores!
+                        </p>
+                    </div>
+                    <div class="comment">
+                        <div class="m-4 d-flex justify-content-between">
+                            <div>
+                                <h5>José Luis</h5>
+                                <label>writer</label>
+                            </div>
+                            <div><i class="fa-solid fa-quote-right"></i></div>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, beatae. Lorem ipsum dolor
+                            sit amet consectetur, adipisicing elit. Iure, dolores!
+                        </p>
+                    </div>
+
+                </div>
+                <div class="slideItem">
+                    <div class="comment">
+                        <div class="m-4 d-flex justify-content-between">
+                            <div>
+                                <h5>José Luis</h5>
+                                <label>writer</label>
+                            </div>
+                            <div><i class="fa-solid fa-quote-right"></i></div>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, beatae. Lorem ipsum dolor
+                            sit amet consectetur, adipisicing elit. Iure, dolores!
+                        </p>
+                    </div>
+                    <div class="comment">
+                        <div class="m-4 d-flex justify-content-between">
+                            <div>
+                                <h5>José Luis</h5>
+                                <label>writer</label>
+                            </div>
+                            <div><i class="fa-solid fa-quote-right"></i></div>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, beatae. Lorem ipsum dolor
+                            sit amet consectetur, adipisicing elit. Iure, dolores!
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 d-flex flex-column justify-content-center align-items-center gap-1 service">
-                <div><i class="fa-solid fa-paintbrush icon fa-3x"></i></div>
-                <h3 class="">Graphic Design</h3>
-                <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore aliquid dolorum
-                    recusandae ab eos distinctio, saepe labore, alias voluptatem, itaque debitis explicabo non
-                    exercitationem corrupti.</p>
-                <a class="cv" href="#">Read More</a>
-            </div>
-            <div class="col-md-4 d-flex flex-column justify-content-center align-items-center gap-1 service">
-                <div><i class="fa-solid fa-chart-simple icon fa-3x"></i></div>
-                <h3 class="">Digital Marketing</h3>
-                <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore aliquid dolorum
-                    recusandae ab eos distinctio, saepe labore, alias voluptatem, itaque debitis explicabo non
-                    exercitationem corrupti.</p>
-                <a class="cv" href="#">Read More</a>
-            </div>
-
-        </div>
-    </section>
-
-    <!--------------------- portfolio section ---------------->
-
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <h1 class="f2  heading">Latest <span class="spanColored">Projects</span></h1>
-            <div class="row m-auto">
-
-                <div class="col-lg-4 col-6 project1">
-                    <div class="project">
-                        <img src="./images/portfolio1.jpg" alt="project1" class="d-block">
-                        <div class="projectContent">
-                            <h3 class="f3">Web Template</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, atque Lorem ipsum
-                            </p>
-                            <a href="#" class="link"><i class="fa-solid fa-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-6 project1">
-                    <div class="project">
-                        <img src="./images/portfolio2.jpg" alt="project1" class="d-block">
-                        <div class="projectContent">
-                            <h3 class="f3">Web Template</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, atque Lorem ipsum </p>
-                            <a href="#" class="link"><i class="fa-solid fa-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-6 project1">
-                    <div class="project">
-                        <img src="./images/portfolio3.jpg" alt="project1" class="d-block">
-                        <div class="projectContent">
-                            <h3 class="f3">Web Template</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, atque Lorem ipsum </p>
-                            <a href="#" class="link"><i class="fa-solid fa-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-6 project2">
-                    <div class="project">
-                        <img src="./images/portfolio4.jpg" alt="project1" class="d-block">
-                        <div class="projectContent">
-                            <h3 class="f3">Web Template</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, atque Lorem ipsum </p>
-                            <a href="#" class="link"><i class="fa-solid fa-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-6 project2">
-                    <div class="project">
-                        <img src="./images/portfolio5.jpg" alt="project1" class="d-block">
-                        <div class="projectContent">
-                            <h3 class="f3">Web Template</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, atque Lorem ipsum </p>
-                            <a href="#" class="link"><i class="fa-solid fa-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-6 project2">
-                    <div class="project">
-                        <img src="./images/portfolio6.jpg" alt="project1" class="d-block">
-                        <div class="projectContent">
-                            <h3 class="f3">Web Template</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, atque Lorem ipsum </p>
-                            <a href="#" class="link"><i class="fa-solid fa-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
+            <div class="sliderBtn">
+                <div class="prev">&lt;</div>
+                <div class="next">&gt;</div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!--------------------- contact section ---------------->
-
-    <section class="contact mt-5" id="contact">
-        <h1 class="heading f1"><span class="spanColored">Contact </span>Me </h1>
-        <div class="row">
-            <div class="col-md-6 pt-3 formPart">
-                <h3 class="f3 mb-3 ">Get in touch</h3>
-                <form action="" class="text-center">
-                    <div class="d-sm-flex d-block  gap-3 m-auto justify-content-center">
-                        <input type="text" name="name" placeholder="Name" id="name" class="mb-4 mb-sm-0">
-                        <input type="email" name="email" placeholder="email" id="email">
-                    </div>
-                    <input type="subject" name="subject" placeholder="subject" class="d-block m-auto mt-4 mb-4">
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="message"
-                        class=" mt-4 d-block mb-4 m-auto"></textarea>
-                    <input type="submit" class="btn" value="Send Message">
-                </form>
-            </div>
-            <div class="col-md-6 pt-3 ">
-                <div class=" d-flex flex-column align-items-center descriptionContact">
-                    <h3 class="f3 ">Contact Info</h3>
-                    <p class="w-75 text-start ">We are always available if the right project comes along, Feel free to
-                        contact us!</p>
-                </div>
-                <div class="contactInfo ms-5">
-                    <div class="row  mt-2">
-                        <div class="col-2 d-flex flex-column justify-content-center align-items-center gap-5">
-                            <i class="fa-solid fa-phone-volume"></i>
-                            <i class="fa-brands fa-whatsapp"></i>
-                            <i class="fa-solid fa-at"></i>
-                        </div>
-                        <div class="col-10 d-flex flex-column text-start gap-5">
-                            <h5>Call Me<br> <em class="f4 ms-3">+212 611-411-620</em> </h5>
-                            <h5>Contact Me In Whatsapp<br> <em class="f4 ms-3">+212 606-507-408</em> </h5>
-                            <h5>Email Me<br> <em class="f4 ms-3">alahniti20@gmail.com</em></h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="cvsBlock">
+        <div class="x2">
+            <a href="#home">
+                <div class="bar3"></div>
+                <div class="bar4"></div>
+            </a>
         </div>
-    </section>
-    <!--------------------- footer ---------------->
+        <div class="cvs d-flex justify-content-between align-items-center">
+            <a class="cv" id="cvENG" href="#" style="font-size: 14px;" download="AbdelilahLAHNITI_CV.pdf">Download CV (ENG)</a>
+            <a class="cv" id="cvFR" href="#" style="font-size: 14px" download="AbdelilahLAHNITI_CV.pdf">Download CV (FR)</a>
+        </div>
+    </div>
+    <div class="cvsBlockBackGround"></div>
 
-    <footer class="d-flex justify-content-center align-items-center ">
-        <h6>&#169 Copyright 2023</h6>
-        <h6>Developed by Abdelilah LAHNITI</h6>
-        <h6>All rights reserved</h6>
-    </footer>
+
+
 
     <script src="js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/af48de5d51.js" crossorigin="anonymous"></script>
