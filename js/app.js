@@ -5,12 +5,15 @@ $(document).ready(function(){
       $('.menu3').toggleClass('hide')
       $('.menu2').toggleClass('retate')
       $('.menu1').toggleClass('retate2')
+      $('body').toggleClass('bodyStyleWithHidden')
    })
    $('.navlist li').click(function(){
       $('.navlist').toggleClass('mobileMenu');
       $('.menu3').toggleClass('hide')
       $('.menu2').toggleClass('retate')
       $('.menu1').toggleClass('retate2')
+      $('body').removeClass('bodyStyleWithHidden')
+
    })
 
    
@@ -140,7 +143,6 @@ $(document).ready(function(){
       $('body').css({
          'overflow':'hidden',
          'height':'100vh'
-   
       });
 
    })

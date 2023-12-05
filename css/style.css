@@ -51,6 +51,9 @@ body{
     background-color: var(--principalColor);
     color: white;
     font-family: 'Rubik', sans-serif;
+      max-width: 100%;
+      overflow: hidden;
+ 
 }
 
  
@@ -421,6 +424,10 @@ header nav .navlist li:hover a{
   opacity: 0;
 transition: 1s
 }
+.bodyStyleWithHidden{
+  overflow:hidden !important;
+  height:100vh !important;
+}
 .retate{
   transform: rotate(45deg);
   position: absolute;
@@ -648,7 +655,7 @@ transition: 1s
     background-color: rgba(255, 255, 255, 0.087);
     max-width: 300px;
     min-width: 300px;
-    height: 55vh;
+    height: 60vh;
     padding-top:10px ;
     border-radius: 10px;
     
@@ -840,7 +847,7 @@ transition: 1s
     position: absolute;
     width: 100%;
     height:100vh;
-    display: flex !important;
+    display: fixed !important;
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
@@ -849,7 +856,7 @@ transition: 1s
     top: 90%;
     clip-path: circle(0% at 100% 0%);
     transition: 1s all ease
-  }
+      }
 
   .mobileMenu{
     clip-path: circle(112% at 100% 0% );
@@ -886,6 +893,10 @@ transition: 1s
     margin: 0px auto;
   }
  
+  .cursor , .cursor2{
+    display: none;
+  }
+
   
 
 }
@@ -940,6 +951,9 @@ transition: 1s
     color: var(--aqua);
   }
   }
+
+  
+  
 
 
 
@@ -1075,15 +1089,21 @@ transition: 1s
 
   @media only screen and (max-width:600px){
     .cvsBlock{
-     
-      width: 200px;
-      height: 100px;
+      width: 220px;
+      height: 150px;
       margin-top:-50px;
       margin-left:-100px;
+    }
+    .cvs .cv{
+      padding: 8px;
+      font-size: 10px !important;
     }
   }
   .cvs{
     width: 100%;
     height: 80%;
   }
+  
+
+  
  
