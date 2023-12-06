@@ -52,7 +52,6 @@ body{
     color: white;
     font-family: 'Rubik', sans-serif;
       max-width: 100%;
-      overflow: hidden;
  
 }
 
@@ -361,7 +360,6 @@ header nav .navlist{
     margin-left: auto;
     margin-top: auto;
     padding-right:8%;
-    
 }
 header nav .navlist li{
     position: relative;
@@ -862,6 +860,10 @@ transition: 1s
     clip-path: circle(112% at 100% 0% );
     
   }
+}
+body{
+  overflow: hidden;
+  max-width: 100%;
 }
 
 

@@ -78,10 +78,10 @@ ScrollReveal({
    duration:2000,
  });
 
- ScrollReveal().reveal('.contentHome , .heading , .contact h3,',{origin:'top'});
+ ScrollReveal().reveal('.contentHome , .heading , .contact h3,heading',{origin:'top'});
  ScrollReveal().reveal('.homeImage , .service , form ',{origin:'bottom'});
  ScrollReveal().reveal('.contentHome h1 ,.contentHome .cv  , .service h3 , .service .cv , .project2',{origin:'left', distance:'200px',});
- ScrollReveal().reveal('.aboutContent , .project1 , ',{origin:'right'});
+ ScrollReveal().reveal('.aboutContent , .project1 ,',{origin:'right'});
  ScrollReveal().reveal(' .project1',{origin:'right', distance:'300px'});
  ScrollReveal().reveal('.project2',{origin:'left', distance:'300px'});
 
@@ -178,7 +178,10 @@ document.getElementById('cvFR').addEventListener('click', function () {
    downloadLink.click();
    
  });
-//---------------- cv download ----------
+//---------------- gsap ----------
+
+
+//---------------- smooth scroll ----------
 
 
 
